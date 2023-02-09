@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/header'); %>
+</head>
+<body>
+  <main class="root-main">
+    <h2>Welcome <%= name %></h2>
+
+    <p class="bigger">From here you can manage your account by updating your email and password!</p>
+    <form class="input-form" action="/me" method="post">
+      <label class="label-input">
+        New Email
+        <input type="text" name="email">
+      </label>
+      <label class="label-input">
+        New Password
+        <input type="password" name="password">
+      </label>
+      <button type="submit">Update Information</button>
+    </form>
+    <a href="/signout">Sign out</a>
+  </main>
+</body>
+</html>

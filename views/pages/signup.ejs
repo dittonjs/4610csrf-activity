@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/header'); %>
+</head>
+<body>
+  <main class="signup-main">
+    <form class="input-form" action="/users" method="post">
+      <label class="label-input">
+        First Name
+        <input type="text" name="firstName">
+      </label>
+      <label class="label-input">
+        Last Name
+        <input type="text" name="lastName">
+      </label>
+      <label class="label-input">
+        Email
+        <input type="text" name="email">
+      </label>
+      <label class="label-input">
+        Password
+        <input type="password" name="password">
+      </label>
+      <button type="submit">Create Account</button>
+    </form>
+  </main>
+</body>
+</html>
